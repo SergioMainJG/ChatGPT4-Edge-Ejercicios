@@ -320,40 +320,86 @@ function validarEquivalenciaConjuntos(arreglo1, arreglo2) {
 
     let conjuntoUno = arreglo1;
     let conjuntoDos = arreglo2;
-    let conjuntoDeVerificacion = [];
+    console.log(`Estos son los conjuntos a analizar [${conjuntoUno}] & [${conjuntoDos}]`);
     let validar;
 
-    if ((conjuntoUno.length === conjuntoDos.length) === true) {
-
-        console.log('Entre al primer if')
-
-        for (let i = 0; i < conjuntoUno.length - 1; i++) {
-
-            if ((conjuntoUno[i] === conjuntoDos[i]) === true) {
-
-                console.log("Entre al segundo if");
-                conjuntoDeVerificacion.push(conjuntoUno[i]);
-            } else {
-
-                console.log("Entre al segundo else");
-
-                validar = false;
-                break;
-            }
-        }
-
-
-
-    } else {
-
-        console.log("Entre al primer else");
+    if ((conjuntoUno.length === conjuntoDos.length) === false) {
 
         validar = false;
+        console.log('No pasó 1');
+        return validar;
+
+    }
+    conjuntoUno.forEach((elementoUno, i) => {
+
+        elementoDos = conjuntoDos[i];
+
+        if ((elementoUno[i] === elementoDos[i]) === false) {
+
+            validar = false;
+            console.log('No pasó 2');
+            return validar;
+        }
+    });
+
+    console.log('Si pasó');
+    validar = true;
+    return validar;
+}
+
+// Escribe una función que tome dos arreglos de números y devuelva verdadero si ambos arreglos tienen los mismos elementos sin importar el orden y falso si no lo tienen.
+
+function validarEquivalenciaDeElementos(arreglo1, arreglo2) {
+
+    let conjuntoUno = arreglo1.sort;
+    let conjuntoDos = arreglo2.sort;
+    console.log(`Estos son los conjuntos a analizar [${conjuntoUno}] & [${conjuntoDos}]`);
+    let validar;
+
+    if ((conjuntoUno.length === conjuntoDos.length) === false) {
+
+        validar = false;
+        console.log('No pasó 1');
+        return validar;
+
     }
 
+    for (let i = 0; i < conjuntoUno.length; i++) {
+        if (conjuntoUno[i] !== conjuntoDos[i]) {
+
+            validar = false;
+            return validar;
+        }
+    }
+
+    console.log('Si pasó');
+    validar = true;
     return validar;
 
 }
+
+// Escribe una función que tome un número n y devuelva un arreglo con los primeros n números primos.
+
+// function cantidadNumPrimos(n) {
+
+//     let cantidad = n;
+//     let arrayPrimos = [];
+//     let iteracion = 2;
+
+//     while ((arrayPrimos.length - 1) < n) {
+
+//         if(){
+
+
+//             arrayPrimos.push();
+//         }
+
+
+//         iteracion++;
+//     }
+
+// }
+
 //Sección de llamada de funciones y de tests
 
 // const ejer1 = factorialDe(5);
@@ -400,5 +446,8 @@ function validarEquivalenciaConjuntos(arreglo1, arreglo2) {
 // const ejer12 = conjuncionConjuntos([2,4,5,12,5,1,9], [2,5,7,9,2,12,5]);
 // console.log(ejer12);
 
-// const ejer13 = validarEquivalenciaConjuntos([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]);
+// const ejer13 = validarEquivalenciaConjuntos([1, 2, 3, 4, 5, 6, 7], [1, 2, 3, 4, 5, 6, 7]);
 // console.log(ejer13);
+
+const ejer14 = validarEquivalenciaDeElementos([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]);
+console.log(ejer14)
