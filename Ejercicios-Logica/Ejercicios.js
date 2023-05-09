@@ -378,7 +378,95 @@ function validarEquivalenciaDeElementos(arreglo1, arreglo2) {
 
 }
 
+//Escribe una función que tome un número n y devuelva un arreglo con los primeros n números pares.
+
+function cantidaPares(n) {
+
+    let cantidad = n;
+    let arrayPares = [];
+    // let i = 0;
+
+    for (let i = 0; arrayPares.length < cantidad; i++) {
+
+        if ((i % 2) == 0) {
+
+            arrayPares.push(i);
+        }
+
+    }
+
+    // do {
+
+    //     if ((i % 2) == 0) {
+
+    //         arrayPares.push(i);
+    //     }
+
+    //     i = i + 1;
+
+    // } while (arrayPares.length < cantidad);
+
+    return arrayPares;
+}
+
+// 17.-Escribe una función que tome un número n y devuelva un arreglo con los primeros n números impares.
+
+function cantidadImpares(n) {
+
+    let cantidad = n;
+    let arrayImpares = [];
+    // let i = 0;
+
+    for (let i = 0; arrayImpares.length < cantidad; i++) {
+
+        if ((i % 2) !== 0) {
+
+            arrayImpares.push(i);
+        }
+    }
+
+    // do {
+
+    //     if ((i % 2) !== 0) {
+
+    //         arrayImpares.push(i);
+    //     }
+
+    //     i = i + 1;
+
+    // } while (arrayImpares.length < cantidad);
+
+    return arrayImpares;
+}
+
 // Escribe una función que tome un número n y devuelva un arreglo con los primeros n números primos.
+
+function cantidadPrimos(n) {
+
+    let cantidad = n;
+    let arrayPrimos = [];
+
+    //dividendo i
+    for (let i = 0; arrayPrimos.length < cantidad; i++) {
+
+        console.log(`Ciclo del for i ${i}`);
+
+        //divisor j    
+        for (let j = 2; j < i; j++) {
+
+            console.log(`Ciclo del for j ${j}`);
+            if ((i % j) !== 0) {
+
+                arrayPrimos.push(i);
+                break;
+            }
+
+        }
+        console.log(`\n`);
+    }
+
+    return arrayPrimos;
+}
 
 // function cantidadNumPrimos(n) {
 
@@ -449,5 +537,14 @@ function validarEquivalenciaDeElementos(arreglo1, arreglo2) {
 // const ejer13 = validarEquivalenciaConjuntos([1, 2, 3, 4, 5, 6, 7], [1, 2, 3, 4, 5, 6, 7]);
 // console.log(ejer13);
 
-const ejer14 = validarEquivalenciaDeElementos([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]);
-console.log(ejer14)
+// const ejer14 = validarEquivalenciaDeElementos([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]);
+// console.log(ejer14)
+
+// const ejer15 = cantidaPares(50);
+// console.log(ejer15);
+
+// const ejer16 = cantidadImpares(100);
+// console.log(ejer16);
+
+const ejer17 = cantidadPrimos(10);
+console.log(ejer17);
