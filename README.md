@@ -38,28 +38,3 @@ Y aquí tienes 10 ejercicios para lógica JS para front-end:
 8.-Crea una función que cambie el tamaño del texto del encabezado cuando se cambie el tamaño del navegador utilizando JS.
 9.-Crea una función que muestre la fecha y hora actual en la página web utilizando JS.
 10.-Crea una función que cambie el orden de los elementos li en la lista ordenada cuando se haga clic en un botón utilizando JS.
-
-Espero que estos ejercicios te sean útiles! ¿Necesitas algo más?
-
-Claro, aquí tienes 20 problemas de lógica de programación que pueden ser resueltos en JavaScript:
-
-1.-Escribe una función que tome un número y devuelva su factorial.
-2.-Escribe una función que tome una cadena y devuelva la cadena invertida.
-3.-Escribe una función que tome un arreglo de números y devuelva el número más grande del arreglo.
-4.-Escribe una función que tome un arreglo de números y devuelva el número más pequeño del arreglo.
-5.-Escribe una función que tome un arreglo de números y devuelva la suma de todos los números del arreglo.
-6.-Escribe una función que tome un arreglo de números y devuelva el promedio de todos los números del arreglo.
-7.-Escribe una función que tome un número y devuelva verdadero si el número es primo y falso si no lo es.
-8.-Escribe una función que tome un número y devuelva verdadero si el número es par y falso si no lo es.
-9.-Escribe una función que tome un número y devuelva verdadero si el número es impar y falso si no lo es.
-10.-Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo con solo los números pares del arreglo original.
-11.-Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo con solo los números impares del arreglo original.
-12.-Escribe una función que tome dos arreglos de números y devuelva un nuevo arreglo con los elementos comunes entre ambos arreglos.
-13.-Escribe una función que tome dos arreglos de números y devuelva verdadero si ambos arreglos tienen los mismos elementos en el mismo orden y falso si no lo tienen.
-14.-Escribe una función que tome dos arreglos de números y devuelva verdadero si ambos arreglos tienen los mismos elementos sin importar el orden y falso si no lo tienen.
-15.-Escribe una función que tome un número n y devuelva un arreglo con los primeros n números primos.
-16.-Escribe una función que tome un número n y devuelva un arreglo con los primeros n números pares.
-17.-Escribe una función que tome un número n y devuelva un arreglo con los primeros n números impares.
-18.-Escribe una función que tome un número n y devuelva la suma de todos los múltiplos de 3 o 5 menores a n.
-19.-Escribe una función que tome dos cadenas y devuelva verdadero si son anagramas y falso si no lo son.
-20.-Escribe una función que tome una cadena y devuelva verdadero si es palíndromo y falso si no lo es.

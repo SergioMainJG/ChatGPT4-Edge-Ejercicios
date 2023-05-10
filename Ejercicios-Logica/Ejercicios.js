@@ -29,7 +29,6 @@ function invertir(cad) {
     for (let i = (cadena.length - 1); i >= 0; i--) {
 
         cadenaInvertida += cadena[i];
-        console.log(cadenaInvertida);
 
     }
 
@@ -161,21 +160,25 @@ function promedioDeSuma(numeros) {
 function validarPrimos(num) {
 
     let validar = num;
+    let contador = 0;
     let siEs;
 
-    for (let i = 2; i < validar; i++) {
+    for (let i = 1; i <= validar; i++) {
 
-        console.log('Se va a realizar la sig evaluación: ' + validar + '/' + i);
-        if ((validar % i == 0) === true) {
+        if ((validar % i) == 0) {
 
-            console.log('No es primo');
-            siEs = false;
-
-        } else if ((validar % i == 0) === false) {
-
-            console.log('Si es primo');
-            siEs = true;
+            contador += 1;
         }
+
+    }
+
+    if (contador == 2) {
+
+        siEs = true;
+
+    } else if (contador > 2) {
+
+        siEs = false;
     }
 
     return siEs;
@@ -439,33 +442,127 @@ function cantidadImpares(n) {
     return arrayImpares;
 }
 
-// Escribe una función que tome un número n y devuelva un arreglo con los primeros n números primos.
+//Escribe una función que tome un número n y devuelva la suma de todos los múltiplos de 3 o 5 menores a n.
 
-function cantidadPrimos(n) {
+function sumaDeMultiplos(n) {
 
     let cantidad = n;
-    let arrayPrimos = [];
+    let arrayMultiplos = [];
+    let sumatoria = 0;
 
-    //dividendo i
-    for (let i = 0; arrayPrimos.length < cantidad; i++) {
+    for (let i = 0; i < cantidad; i++) {
 
-        console.log(`Ciclo del for i ${i}`);
+        console.log(`Número a evaluar: ${i}`)
 
-        //divisor j    
-        for (let j = 2; j < i; j++) {
+        if ((i % 3) == 0 || (i % 5) == 0) {
 
-            console.log(`Ciclo del for j ${j}`);
-            if ((i % j) !== 0) {
+            console.log(`Si cumple con las condiciones`);
+            arrayMultiplos.push(i);
+        };
+    };
 
-                arrayPrimos.push(i);
-                break;
-            }
+    for (let i = 0; i <= arrayMultiplos.length - 1; i++) {
 
-        }
-        console.log(`\n`);
+        sumatoria += arrayMultiplos[i];
+        console.log(`La sumatoria tiene un valor actual de ${sumatoria}`);
+    };
+
+    console.log(arrayMultiplos);
+    return sumatoria;
+
+}
+
+// Escribe una función que tome dos cadenas y devuelva verdadero si son anagramas y falso si no lo son.
+
+function analizarAnagramas(cadena1, cadena2) {
+
+    let cad1 = cadena1.toLowerCase();;
+    let cad2 = cadena2.toLowerCase();;
+    let siSon;
+
+    cad1 = cad1.split('');
+    cad2 = cad2.split('');
+
+    cad1 = cad1.sort();
+    cad2 = cad2.sort();
+
+    if ((cad1.length === cad2.length) === false) {
+
+        siSon = false;
+        return siSon;
+
     }
 
-    return arrayPrimos;
+    for (let i = 0; i < cad1.length; i++) {
+        if (cad1[i] !== cad2[i]) {
+
+            siSon = false;
+            return siSon;
+        }
+    }
+
+    console.log('Si pasó');
+    siSon = true;
+    return siSon;
+
+}
+
+// Escribe una función que tome una cadena y devuelva verdadero si es palíndromo y falso si no lo es.
+
+function analizarPalindromo(cadena) {
+
+    let cad = cadena.toLowerCase();
+    let cadInvertida = invertir(cad);
+    let validar;
+
+    if (cad === cadInvertida) {
+
+        validar = true;
+        return validar;
+    }
+    else {
+
+        validar = false
+        return validar;
+    }
+
+}
+
+// Escribe una función que tome un número n y devuelva un arreglo con los primeros n números primos.
+function primerosNPrimos(n) {
+
+    let cantidad = n;
+    let primos = [];
+
+    console.log('0')
+
+    if (cantidad == 0) {
+
+        console.log('1');
+        return primos;
+
+    } else if (cantidad == 1) {
+
+        console.log('2');
+        primos.push(1);
+        return primos;
+
+    } else if (cantidad > 1) {
+
+        console.log('3');
+        primos.push(1);
+
+        for (let i = 2; primos.length < cantidad; i++) {
+
+            if (validarPrimos(i) === true) {
+
+                primos.push(i);
+            }
+        }
+
+        return primos;
+
+    }
 }
 
 // function cantidadNumPrimos(n) {
@@ -510,7 +607,7 @@ function cantidadPrimos(n) {
 // console.log('Promedio ' + ejer61);
 // console.log('Promedio de suma' + ejer62);
 
-// const ejer7 = validarPrimos(23);
+// const ejer7 = validarPrimos(4);
 // console.log(ejer7);
 
 // const ejer8 = validarPar(100);
@@ -546,5 +643,14 @@ function cantidadPrimos(n) {
 // const ejer16 = cantidadImpares(100);
 // console.log(ejer16);
 
-const ejer17 = cantidadPrimos(10);
-console.log(ejer17);
+// const ejer17 = sumaDeMultiplos(100);
+// console.log(ejer17);
+
+// const ejer18 = analizarAnagramas('lACTeo', 'COletA');
+// console.log(ejer18);
+
+// const ejer19 = analizarPalindromo('Hola');
+// console.log(ejer19);
+
+// const ejer20 = primerosNPrimos(100);
+// console.log(ejer20);
