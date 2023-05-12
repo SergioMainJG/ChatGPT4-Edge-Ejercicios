@@ -1,0 +1,18 @@
+/* 2.-Cambia el color y el tamaño del texto del encabezado de tu página web utilizando CSS3. */
+html {
+    background-color: black;
+}
+
+header {
+    background-color: blueviolet;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+h1 {
+    height: max-content;
+    color: aqua;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}

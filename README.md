@@ -1,23 +1,6 @@
 # ChatGPT4-Edge-Ejercicios
-
-Buenas noches! Claro, puedo ayudarte con eso. Aquí tienes 10 ejercicios de desarrollo en HTML5:
-
-1.-Crea una página web básica con encabezado, cuerpo y pie de página utilizando las etiquetas semánticas de HTML5.
-2.-Agrega una tabla a tu página web con al menos 3 columnas y 5 filas utilizando las etiquetas de tabla de HTML5
-3.-Agrega un formulario a tu página web con campos para nombre, correo electrónico y mensaje utilizando las etiquetas de formulario de HTML5.
-4.-Agrega un video a tu página web utilizando la etiqueta de video de HTML5.
-5.-Agrega un audio a tu página web utilizando la etiqueta de audio de HTML5.
-6.-Crea una lista ordenada y una lista desordenada en tu página web utilizando las etiquetas de lista de HTML5.
-7.-Agrega un enlace a otra página web en tu página utilizando la etiqueta de enlace de HTML5.
-8.-Agrega una imagen a tu página web utilizando la etiqueta de imagen de HTML5.
-9.-Crea una sección de navegación en tu página web utilizando la etiqueta de navegación de HTML5.
-10.-Agrega un artículo a tu página web utilizando la etiqueta de artículo de HTML5.
-
 Aquí tienes 10 ejercicios para CSS3:
 
-1.-Cambia el color del fondo del cuerpo de tu página web utilizando CSS3.
-2.-Cambia el color y el tamaño del texto del encabezado de tu página web utilizando CSS3.
-3.-Agrega un borde a la tabla en tu página web utilizando CSS3.
 4.-Centra el formulario en tu página web utilizando CSS3.
 5.-Cambia el estilo del cursor cuando se pasa sobre un enlace en tu página web utilizando CSS3.
 6.-Agrega una sombra al texto del encabezado de tu página web utilizando CSS3.

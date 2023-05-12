@@ -1,0 +1,38 @@
+/* 3.-Agrega un borde a la tabla en tu página web utilizando CSS3. */
+html {
+    background-color: black;
+}
+
+div {
+    align-items: center;
+    margin: auto;
+}
+
+table {
+    border: 10;
+    border-color: aliceblue;
+    background-color: blue;
+    border-collapse: collapse;
+}
+
+th,
+tr {
+    padding: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+td {
+    letter-spacing: 1px;
+    color: antiquewhite;
+}
+
+h2 {
+    font-size: medium;
+    color: antiquewhite;
+}
+
+a {
+    font: optional;
+    color: azure;
+}
