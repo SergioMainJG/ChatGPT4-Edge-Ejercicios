@@ -1,7 +1,6 @@
 # ChatGPT4-Edge-Ejercicios
 Aquí tienes 10 ejercicios para CSS3:
 
-4.-Centra el formulario en tu página web utilizando CSS3.
 5.-Cambia el estilo del cursor cuando se pasa sobre un enlace en tu página web utilizando CSS3.
 6.-Agrega una sombra al texto del encabezado de tu página web utilizando CSS3.
 7.-Cambia el estilo del botón enviar en el formulario de tu página web utilizando CSS3.
